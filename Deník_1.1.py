@@ -35,9 +35,9 @@ def get_fills(api = True):
 
 def fill(strategy,api = False):
     '''
-    - funkce načte otervřené obchody z databáze 
-    - porovná, jestli se z nějakých obchodů vystoupilo, případně je zapíše
-    - načte dnes otevřené obchody a zapíše do databáze
+    loads todays fills
+    compares if some trades exited and writes it to the database
+    writes the open trades to the database
     '''
     #data = pd.read_excel('LiveReport_dev.xlsx',sheet_name = strategy)
     #str_opened = data[data.Výstup.isnull()]
